@@ -5063,7 +5063,8 @@
           "type": "string"
         }
       },
-      "url": "/teams/{workspace}/repositories"
+      "returns": "PaginatedRepositories",
+      "url": "/teams/{workspace}/repositories{?page,pagelen,q,sort}"
     },
     "listRepositoriesForUser": {
       "alias": "users.listRepositories"
@@ -5395,7 +5396,8 @@
           "type": "string"
         }
       },
-      "url": "/users/{workspace}/repositories"
+      "returns": "PaginatedRepositories",
+      "url": "/users/{workspace}/repositories{?page,pagelen,q,sort}"
     },
     "listRepositoriesForTeam": {
       "alias": "teams.listRepositories"
